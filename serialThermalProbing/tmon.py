@@ -62,7 +62,7 @@ def record(fname, delaySec,ard=False):
                 s = "{},{},{}".format(get_ts(), d[0], d[1])
             else:
                 ard_d=read_ard_data()
-                s = "{},{},{},{},{}".format(get_ts(), d[0], d[1],ard_d[0],ard_d[1])
+                s = "{},{},{},{},{},{},{},{}".format(get_ts(), d[0], d[1],ard_d[0],ard_d[1],ard_d[2],ard_d[3],ard_d[4])
             fh.write(s+"\n")
             print(s)
             time.sleep(delaySec)
